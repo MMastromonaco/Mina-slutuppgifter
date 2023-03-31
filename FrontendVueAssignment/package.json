@@ -1,0 +1,21 @@
+{
+  "name": "frontendvuetask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMastromonaco/FrontendVueTask.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MMastromonaco/FrontendVueTask/issues"
+  },
+  "homepage": "https://github.com/MMastromonaco/FrontendVueTask#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2"
+  }
+}

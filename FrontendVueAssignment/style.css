@@ -1,0 +1,267 @@
+* {
+    text-align: center;
+    margin: 0px;
+}
+
+html {}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#app {
+    width: 100%;
+}
+
+header {
+    border-bottom: 1px solid black;
+    background-color: antiquewhite;
+    
+}
+header .expandButton{
+    position: absolute;
+    top: 0;
+    right: 0;   
+    margin: 10px;
+}
+
+.removeJakobsButton{
+    display: none;
+}
+
+.expandingDiv {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    border-left: 1px solid black;
+}
+
+.expanded {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #cccccc;
+}
+
+.expandButton {
+    display: block;
+    margin: 20px auto;
+
+}
+
+.asideCanvas{
+    display: grid;
+    grid-template:
+    "a b"  / 1fr 1fr;
+    padding: 10px;
+}
+
+@media screen and (max-width: 565px) {
+    .asideCanvas {
+      grid-template:
+        "a"
+        "b" / 1fr;
+        justify-items: center;
+    }
+    #historyCanvas{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .asideCanvas ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+.monthHistory p {
+    padding: 7px;
+}
+
+.asideCanvas ul {
+    grid-area: b;
+    margin-right: auto;
+}
+
+#historyCanvas {
+    grid-area: a;
+    margin-left: auto;
+}
+
+.expandingDiv.active {
+    width: 100%;
+}
+
+.inActive {
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+.information{
+    flex: 1;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 2%;
+
+}
+
+.Input{
+    flex: 2;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 2%;
+
+}
+
+.transactions {
+    flex: 1;
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 2%;
+
+}
+
+.buttonLayout button {
+    height: 35px;
+}
+
+.buttonLayout {
+    display: grid;
+    grid-template:
+        "a a a"
+        "b c d"
+        "e f g"
+        "h i j"
+        "k l m" / 1fr 1fr 1fr;
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overlay {
+    grid-area: a;
+}
+
+#button-1 {
+    grid-area: b;
+}
+
+#button-2 {
+    grid-area: c;
+}
+
+#button-3 {
+    grid-area: d;
+}
+
+#button-4 {
+    grid-area: e;
+}
+
+#button-5 {
+    grid-area: f;
+}
+
+#button-6 {
+    grid-area: g;
+}
+
+#button-7 {
+    grid-area: h;
+}
+
+#button-8 {
+    grid-area: i;
+}
+
+#button-9 {
+    grid-area: j;
+}
+
+#button-10 {
+    grid-area: k;
+    font-size: 20px
+}
+
+#button-0 {
+    grid-area: l;
+}
+
+#button-11 {
+    grid-area: m;
+}
+
+.food {
+    background-color:#FF0000 ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.transportation {
+    background-color:#FFFF00 ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.entertainment{
+    background-color:#008000 ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.housing{
+    background-color: #800080;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.miscellaneous{
+    background-color:#008080 ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+.stocks {
+    background-color: #808000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+li{
+    display: flex;
+    padding: 5px;
+}
